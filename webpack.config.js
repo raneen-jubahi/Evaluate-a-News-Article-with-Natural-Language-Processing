@@ -6,6 +6,13 @@ module.exports = {
   entry: "./src/client/index.js",
   mode: "development",
   devtool: 'source-map',
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist'),
+        libraryTarget: 'var',
+        library: 'Client',
+        clean: true,
+    },
 
   module: {
     rules: [
