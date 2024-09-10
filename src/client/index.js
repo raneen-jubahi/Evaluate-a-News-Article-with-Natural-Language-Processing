@@ -6,4 +6,8 @@ import "./styles/resets.scss"
 import "./styles/style.scss"
 import "./styles/buttons.scss"
 
+import {formHandler}  from "./js/formHandler"
 
+export{
+    formHandler
+}
